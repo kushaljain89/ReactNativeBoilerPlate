@@ -60,7 +60,7 @@ class AppRoot extends React.Component {
         }
         return (
             <SafeAreaView style={styles.container}>
-                <StatusBar hidden={this.state.showStatusBar}/>
+                <StatusBar hidden={!this.state.showStatusBar}/>
                 {this.state.showStatusBar ? <View style={{height: StatusBar.StatusBar.currentHeight}}/> : <View/>}
                 <StyleProvider style={getTheme(platform)}>
                     <RootNavigator navigation={addNavigationHelpers({
