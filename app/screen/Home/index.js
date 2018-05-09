@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {View, Text} from "react-native";
-
 import {registerForPushNotificationsAsync} from "@utils/PushNotification";
 
 class homeScreen extends Component {
